@@ -11,12 +11,23 @@ html {
 
 body {
   overflow-x: hidden;
+  background-image: radial-gradient(circle 500% , #b5e4dc,#ffffff);
+}
+h1 {
+  font-size: clamp(2.2rem, 6vw, 5rem);
 }
 
-h1 { font-size: clamp(2.2rem, 6vw, 5rem); }
-h2 { font-size: clamp(1.8rem, 5vw, 3.2rem); }
-h3 { font-size: clamp(1.4rem, 4vw, 1.9rem); }
-p, li, span {
+h2 {
+  font-size: clamp(1.8rem, 5vw, 3.2rem);
+}
+
+h3 {
+  font-size: clamp(1.4rem, 4vw, 1.9rem);
+}
+
+p,
+li,
+span {
   font-size: clamp(0.95rem, 2.8vw, 1.125rem);
   line-height: 1.6;
 }
@@ -26,14 +37,12 @@ section {
   padding-right: clamp(16px, 5vw, 60px);
 }
 
-body {
-  background: linear-gradient(180deg, #eaf7f2 0%, #ffffff 70%);
-}
 img,
 svg {
   max-width: 100%;
   height: auto;
 }
+
 /* Navbar */
 .navbar {
   height: 80px;
@@ -42,6 +51,7 @@ svg {
   align-items: center;
   justify-content: space-between;
   border-radius: 10%;
+  
 }
 
 .nav-links {
@@ -59,16 +69,19 @@ svg {
   color: #000;
   font-weight: 500;
 }
+
 .auth {
   display: flex;
   align-items: center;
   gap: 25px;
 }
+
 .login {
   text-decoration: none;
   color: #A6A6A6;
   line-height: 100%;
 }
+
 .signup {
   text-decoration: none;
   padding: 10px;
@@ -91,6 +104,7 @@ svg {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .hero-left h1 {
@@ -109,7 +123,7 @@ svg {
   line-height: 30px;
   color: #000;
   margin-top: 60px;
- max-width: 45ch;
+  max-width: 45ch;
 }
 
 .hero-actions {
@@ -127,7 +141,7 @@ svg {
 
   font-weight: 500;
   cursor: pointer;
-  gap:10px;
+  gap: 10px;
   padding: 20px 30px;
 }
 
@@ -156,8 +170,8 @@ svg {
 /* Mini Icons */
 .hero-icon {
   position: absolute;
-  background: transparent;   
-  padding: 0;                
+  background: transparent;
+  padding: 0;
   line-height: 0;
 }
 
@@ -172,6 +186,7 @@ svg {
   right: 0;
   transform: translate(45%, -45%);
 }
+
 .icon-orange {
   bottom: 0;
   right: 80px;
@@ -184,7 +199,7 @@ svg {
   background: #fff;
   padding: 14px 18px;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
 .label {
@@ -218,7 +233,8 @@ svg {
   bottom: 60px;
   left: -40px;
 }
-.amt-wrap{
+
+.amt-wrap {
   display: flex;
   gap: 10px;
 }
@@ -242,6 +258,7 @@ svg {
 .brands h2 {
   font-weight: 700;
 }
+
 .logos {
   margin-top: 32px;
   display: flex;
@@ -322,7 +339,7 @@ svg {
   display: flex;
   gap: 18px;
   align-items: flex-start;
-  
+
 }
 
 .icon {
@@ -367,11 +384,11 @@ svg {
 .features-header p {
   line-height: 30px;
   max-width: 461px;
-  color:#A6A6A6;
+  color: #A6A6A6;
 }
 
 .get-started {
-  background:#54BD95;
+  background: #54BD95;
   color: #FFFFFF;
   border: none;
   font-weight: 500;
@@ -393,7 +410,7 @@ svg {
 .feature-card h4 {
   margin-top: 24px;
   font-weight: 600;
-  line-height:30px;
+  line-height: 30px;
   color: #191A15;
 }
 
@@ -403,17 +420,20 @@ svg {
   line-height: 30px;
   color: #A6A6A6;
   font-weight: 500;
-   max-width: 280px; 
+  max-width: 280px;
 }
-.imgdiv{
-  color:#F9F8FE;
-  gap:5px;
+
+.imgdiv {
+  color: #F9F8FE;
+  gap: 5px;
 }
+
 /* Benefit */
 .benefit {
   padding: 100px 60px;
   background: #fff;
 }
+
 .benefit__wrapper {
   max-width: 1200px;
   margin: auto;
@@ -427,6 +447,7 @@ svg {
   font-weight: 700;
   line-height: 1.1;
 }
+
 .benefit__list {
   margin-top: 40px;
   list-style: none;
@@ -439,9 +460,10 @@ svg {
   margin-bottom: 18px;
   font-weight: 500;
   line-height: 30px;
-  color:#191A15;
+  color: #191A15;
   font-style: medium;
 }
+
 .benefit__check {
   width: 32px;
   height: 32px;
@@ -472,13 +494,14 @@ svg {
   top: 50%;
   transform: translateY(-50%);
 }
+
 /* common card */
 .benefit-card {
   position: absolute;
   background: #fff;
   padding: 14px 16px;
   border-radius: 16px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
 /* profile card */
@@ -527,9 +550,10 @@ svg {
   margin-top: 4px;
   color: #191A15;
 }
-.down-amt-wrap{
+
+.down-amt-wrap {
   display: flex;
-  gap:10px;
+  gap: 10px;
 }
 
 /* success card */
@@ -540,10 +564,12 @@ svg {
   align-items: center;
   gap: 10px;
 }
-.benefit-card.success p{
+
+.benefit-card.success p {
   font-weight: 400;
   letter-spacing: -3%;
 }
+
 .pricing {
   padding: 100px 20px;
   text-align: center;
@@ -557,9 +583,9 @@ svg {
 }
 
 .subtitle {
-  color:#A6A6A6;
+  color: #A6A6A6;
   margin: 16px 0 32px;
-  font-weight:700;
+  font-weight: 700;
 }
 
 /* toggle */
@@ -584,7 +610,7 @@ svg {
 .billing-toggle .active {
   background: #54BD95;
   color: #fff;
-   font-weight: 500;
+  font-weight: 500;
   line-height: 30px;
 }
 
@@ -593,13 +619,14 @@ svg {
   display: flex;
   gap: 32px;
   justify-content: center;
-  
+
 }
+
 .card {
   background: #fff;
   border-radius: 24px;
   padding: 40px 32px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
 }
@@ -627,14 +654,19 @@ svg {
   text-align: center;
   margin-bottom: 50px;
 }
+
 .amount1 {
   font-weight: 700;
   line-height: 1;
+  font-size: 4.5rem;
+  color: #191A15;
 }
 
 .amount1 sup {
   vertical-align: super;
   margin-right: 4px;
+  font-size: 1.5rem;
+  color: #A6A6A6;
 }
 
 .card ul {
@@ -658,6 +690,7 @@ svg {
   flex-shrink: 0;
   margin-top: 4px;
 }
+
 .card button {
   margin-top: auto;
   align-self: center;
@@ -682,7 +715,7 @@ svg {
 
 /* Pro description */
 .card-pro .pro-desc {
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 
@@ -700,7 +733,7 @@ svg {
   position: absolute;
   width: 140%;
   height: 260px;
-  background: rgba(255,255,255,0.18);
+  background: rgba(255, 255, 255, 0.18);
   border-radius: 50%;
   bottom: -120px;
   left: 50%;
@@ -708,18 +741,18 @@ svg {
   z-index: 0;
 }
 
-/* Price number */
 .amount2 {
   position: relative;
   z-index: 1;
   font-weight: 700;
   line-height: 1;
+  font-size: 4.5rem;
 
 }
 
 .amount2 sup {
   vertical-align: super;
- 
+  font-size: 1.5rem;
 }
 
 /* Save badge */
@@ -811,7 +844,7 @@ svg {
 }
 
 .footer-author {
-  
+
   font-weight: 500;
   color: #A6A6A6;
   margin-bottom: 30px;
@@ -819,7 +852,7 @@ svg {
 
 .footer-avatars {
   display: flex;
-  flex-wrap:wrap ;
+  flex-wrap: wrap;
   align-items: center;
   gap: 32px;
 
@@ -870,7 +903,7 @@ svg {
   border-radius: 10px;
   border: none;
   background-color: #54BD95;
-  color:#FFFFFF;
+  color: #FFFFFF;
   font-weight: 600;
   cursor: pointer;
 }
@@ -930,7 +963,7 @@ svg {
   color: #ffffff;
   padding: 12px 26px;
   flex: 1;
-  
+
 }
 
 .email-box input::placeholder {
@@ -980,6 +1013,7 @@ svg {
   color: #a9b1c7;
   font-weight: 500;
 }
+
 @media (max-width: 768px) {
   .navbar {
     padding: 0 20px;
@@ -987,7 +1021,7 @@ svg {
   }
 
   .nav-links {
-    display: none; 
+    display: none;
   }
 
   .auth {
@@ -999,7 +1033,7 @@ svg {
     font-size: 14px;
   }
 
-   .hero {
+  .hero {
     flex-direction: column;
     padding: 40px 20px;
     text-align: center;
@@ -1047,7 +1081,7 @@ svg {
     gap: 24px;
   }
 
-   .support {
+  .support {
     padding: 60px 20px;
   }
 
@@ -1064,6 +1098,7 @@ svg {
   .feature {
     padding: 18px;
   }
+
   .features {
     padding: 60px 20px;
   }
@@ -1082,6 +1117,7 @@ svg {
   .feature-card p {
     max-width: 100%;
   }
+
   .benefit {
     padding: 70px 20px;
   }
@@ -1090,6 +1126,7 @@ svg {
     flex-direction: column-reverse;
     gap: 40px;
   }
+
   .pricing {
     padding: 80px 20px;
   }
@@ -1117,7 +1154,7 @@ svg {
     width: 100%;
   }
 
-   .footer-section,
+  .footer-section,
   .site-footer {
     padding: 60px 20px;
   }
@@ -1142,8 +1179,39 @@ svg {
     text-align: center;
   }
 }
-@media (max-width:992px){
-  .nav-links{
+
+@media (max-width:992px) {
+  .nav-links {
     display: none;
+  }
+}
+
+/* logo slider */
+.logos-marquee {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.logos-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-logos 10s linear infinite;
+}
+
+.logos {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding-right: 60px;
+}
+
+@keyframes scroll-logos {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
   }
 }
