@@ -34,7 +34,6 @@ svg {
   max-width: 100%;
   height: auto;
 }
-
 /* Navbar */
 .navbar {
   height: 80px;
@@ -60,19 +59,16 @@ svg {
   color: #000;
   font-weight: 500;
 }
-
 .auth {
   display: flex;
   align-items: center;
   gap: 25px;
 }
-
 .login {
   text-decoration: none;
   color: #A6A6A6;
   line-height: 100%;
 }
-
 .signup {
   text-decoration: none;
   padding: 10px;
