@@ -5,8 +5,34 @@
   font-family: "Inter", sans-serif;
 }
 
+html {
+  font-size: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+h1 { font-size: clamp(2.2rem, 6vw, 5rem); }
+h2 { font-size: clamp(1.8rem, 5vw, 3.2rem); }
+h3 { font-size: clamp(1.4rem, 4vw, 1.9rem); }
+p, li, span {
+  font-size: clamp(0.95rem, 2.8vw, 1.125rem);
+  line-height: 1.6;
+}
+
+section {
+  padding-left: clamp(16px, 5vw, 60px);
+  padding-right: clamp(16px, 5vw, 60px);
+}
+
 body {
   background: linear-gradient(180deg, #eaf7f2 0%, #ffffff 70%);
+}
+img,
+svg {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Navbar */
@@ -26,7 +52,6 @@ body {
 }
 
 .nav-links li {
-  font-size: 16px;
   color: #A6A6A6;
   cursor: pointer;
 }
@@ -54,11 +79,15 @@ body {
   background-color: #54BD95;
   color: #F8F8FA;
   border-radius: 10px;
-  font-size: 16px;
   font-weight: 500;
 }
 
 /* Hero */
+.hero,
+.benefit-right {
+  overflow: hidden;
+}
+
 .hero {
   max-width: 1300px;
   margin: auto;
@@ -69,9 +98,8 @@ body {
 }
 
 .hero-left h1 {
-  font-size: 80px;
   font-weight: 700;
-  line-height: 90px;
+  line-height: 1.1;
 }
 
 .curvediv {
@@ -82,11 +110,10 @@ body {
 
 .description {
   font-weight: 500;
-  font-size: 18px;
   line-height: 30px;
   color: #000;
   margin-top: 60px;
-  max-width: 450px;
+ max-width: 45ch;
 }
 
 .hero-actions {
@@ -101,7 +128,7 @@ body {
   color: #fff;
   border: none;
   border-radius: 40px;
-  font-size: 18px;
+
   font-weight: 500;
   cursor: pointer;
   gap:10px;
@@ -117,7 +144,6 @@ body {
 
 .view-btn {
   font-weight: 500;
-  font-size: 18px;
   color: #191A15;
 }
 
@@ -166,14 +192,12 @@ body {
 }
 
 .label {
-  font-size: 12px;
   font-weight: 400;
   color: #A9A7B6;
 }
 
 .amount {
   font-weight: 400;
-  font-size: 12px;
   margin-top: 4px;
   color: #000000;
 }
@@ -192,7 +216,6 @@ body {
   color: white;
   padding: 6px 14px;
   border-radius: 20px;
-  font-size: 13px;
 }
 
 .income-card {
@@ -211,7 +234,6 @@ body {
   bottom: 20px;
   padding: 18px;
   border-radius: 10px;
-  font-size: 14px;
   color: #161C28;
 }
 
@@ -222,7 +244,6 @@ body {
 }
 
 .brands h2 {
-  font-size: 40px;
   font-weight: 700;
 }
 .logos {
@@ -268,13 +289,8 @@ body {
   margin-top: 40px;
 }
 
-.rating-box {
-  font-size: 14px;
-}
-
 .stars {
   color: #FFC728;
-  font-size: 18px;
   letter-spacing: 2px;
 }
 
@@ -284,18 +300,15 @@ body {
 
 .rating-box p {
   margin-top: 6px;
-  font-size: 18px;
   font-weight: 700;
 }
 
 .rating-box strong {
   font-weight: 400;
-  font-size: 18px;
 }
 
 .rating-box span {
   color: #A6A6A6;
-  font-size: 18px;
   font-weight: 700;
 }
 
@@ -321,17 +334,14 @@ body {
   border-radius: 10px;
   display: grid;
   place-items: center;
-  font-size: 18px;
 }
 
 .feature h4 {
-  font-size: 16x;
   font-weight: 700;
 }
 
 .feature p {
   margin-top: 6px;
-  font-size: 14px;
   color: #A6A6A6;
   line-height: 1.6;
 }
@@ -353,14 +363,12 @@ body {
 }
 
 .features-header h2 {
-  font-size: 50px;
   font-weight: 600;
   color: #191A15;
   line-height: 100%;
 }
 
 .features-header p {
-  font-size: 18px;
   line-height: 30px;
   max-width: 461px;
   color:#A6A6A6;
@@ -373,7 +381,6 @@ body {
   font-weight: 500;
   padding: 14px 26px;
   border-radius: 70px;
-  font-size: 15px;
   cursor: pointer;
   line-height: 30px;
 }
@@ -389,7 +396,6 @@ body {
 
 .feature-card h4 {
   margin-top: 24px;
-  font-size: 30px;
   font-weight: 600;
   line-height:30px;
   color: #191A15;
@@ -397,7 +403,6 @@ body {
 
 .feature-card p {
   margin-top: 10px;
-  font-size: 18px;
   line-height: 1.7;
   line-height: 30px;
   color: #A6A6A6;
@@ -423,7 +428,6 @@ body {
 
 /* LEFT */
 .benefit__title {
-  font-size: 52px;
   font-weight: 700;
   line-height: 1.1;
 }
@@ -437,7 +441,6 @@ body {
   align-items: center;
   gap: 16px;
   margin-bottom: 18px;
-  font-size: 18px;
   font-weight: 500;
   line-height: 30px;
   color:#191A15;
@@ -451,7 +454,7 @@ body {
   border-radius: 50%;
   display: grid;
   place-items: center;
-  font-size: 13px;
+
 }
 
 /* RIGHT */
@@ -480,7 +483,6 @@ body {
   padding: 14px 16px;
   border-radius: 16px;
   box-shadow: 0 12px 30px rgba(0,0,0,0.12);
-  font-size: 14px;
 }
 
 /* profile card */
@@ -499,7 +501,6 @@ body {
 }
 
 .profile h4 {
-  font-size: 16px;
   margin: 0;
   font-weight: 500;
   color: #191A15;
@@ -507,7 +508,6 @@ body {
 }
 
 .profile p {
-  font-size: 12px;
   color: #A6A6A6;
   margin: 0;
   padding: 4px;
@@ -521,14 +521,12 @@ body {
 }
 
 .benefit-card.income span {
-  font-size: 12px;
   color: #A9A7B6;
   font-weight: 400;
 }
 
 .benefit-card.income strong {
   display: block;
-  font-size: 16px;
   font-weight: 500;
   margin-top: 4px;
   color: #191A15;
@@ -548,7 +546,6 @@ body {
 }
 .benefit-card.success p{
   font-weight: 400;
-  font-size: 18px;
   letter-spacing: -3%;
 }
 .pricing {
@@ -558,7 +555,6 @@ body {
 }
 
 .pricing h2 {
-  font-size: 50px;
   font-weight: 700;
   line-height: 73px;
   color: #191A15;
@@ -568,7 +564,6 @@ body {
   color:#A6A6A6;
   margin: 16px 0 32px;
   font-weight:700;
-  font-size: 18px;
 }
 
 /* toggle */
@@ -587,7 +582,6 @@ body {
   cursor: pointer;
   border-radius: 10px;
   font-weight: 500;
-  font-size: 18px;
   line-height: 30px;
 }
 
@@ -595,19 +589,16 @@ body {
   background: #54BD95;
   color: #fff;
    font-weight: 500;
-  font-size: 18px;
   line-height: 30px;
 }
 
 /* cards */
-
 .pricing-cards {
   display: flex;
   gap: 32px;
   justify-content: center;
   
 }
-
 .card {
   background: #fff;
   border-radius: 24px;
@@ -623,7 +614,6 @@ body {
 }
 
 .card h3 {
-  font-size: 30px;
   font-weight: 600;
   text-align: center;
   margin-bottom: 8px;
@@ -631,7 +621,6 @@ body {
 
 .desc,
 .pro-desc {
-  font-size: 18px;
   line-height: 28px;
   text-align: center;
   margin-bottom: 28px;
@@ -643,13 +632,11 @@ body {
   margin-bottom: 50px;
 }
 .amount1 {
-  font-size: 56px;
   font-weight: 700;
   line-height: 1;
 }
 
 .amount1 sup {
-  font-size: 20px;
   vertical-align: super;
   margin-right: 4px;
 }
@@ -664,7 +651,6 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  font-size: 18px;
   line-height: 28px;
   font-weight: 500;
   margin-bottom: 16px;
@@ -687,7 +673,6 @@ body {
   color: #54BD95;
   border-radius: 14px;
   padding: 14px 24px;
-  font-size: 18px;
   font-weight: 600;
   border: none;
 }
@@ -707,7 +692,6 @@ body {
 
 .card-pro .price {
   position: relative;
-  /* height: 210px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -732,14 +716,12 @@ body {
 .amount2 {
   position: relative;
   z-index: 1;
-  font-size: 72px;
   font-weight: 700;
   line-height: 1;
 
 }
 
 .amount2 sup {
-  font-size: 22px;
   vertical-align: super;
  
 }
@@ -752,7 +734,6 @@ body {
   color: #fff;
   padding: 10px 22px;
   border-radius: 50px;
-  font-size: 16px;
   font-weight: 600;
 }
 
@@ -767,7 +748,6 @@ body {
   flex-grow: 1;
 }
 
-/* List inside white box */
 .card-pro .bg ul {
   margin-bottom: 28px;
 }
@@ -778,7 +758,6 @@ body {
   color: #fff;
   border-radius: 16px;
   padding: 16px 36px;
-  font-size: 18px;
   font-weight: 600;
   border: none;
 }
@@ -806,7 +785,6 @@ body {
 }
 
 .footer-left h2 {
-  font-size: 50px;
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 16px;
@@ -816,7 +794,6 @@ body {
   max-width: 420px;
   color: #A6A6A6;
   font-weight: 500;
-  font-size: 18px;
   line-height: 1.6;
   margin-bottom: 40px;
 }
@@ -834,11 +811,11 @@ body {
   margin-bottom: 16px;
   margin-top: 30px;
   font-weight: 500;
-  font-size: 18px;
+
 }
 
 .footer-author {
-  font-size: 18px;
+  
   font-weight: 500;
   color: #A6A6A6;
   margin-bottom: 30px;
@@ -846,6 +823,7 @@ body {
 
 .footer-avatars {
   display: flex;
+  flex-wrap:wrap ;
   align-items: center;
   gap: 32px;
 
@@ -866,13 +844,11 @@ body {
 
 
 .card-header h3 {
-  font-size: 30px;
   font-weight: 500;
 }
 
 .footer-card label {
   display: block;
-  font-size: 18px;
   font-weight: 500;
   color: #FFFFFF;
   margin-bottom: 18px;
@@ -884,7 +860,6 @@ body {
   padding: 14px 16px;
   border-radius: 10px;
   border: none;
-  font-size: 14px;
   margin-bottom: 20px;
 }
 
@@ -900,14 +875,12 @@ body {
   border: none;
   background-color: #54BD95;
   color:#FFFFFF;
-  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
 }
 
 .card-alt {
   text-align: center;
-  font-size: 14px;
   font-weight: 500;
   color: #9aa3b8;
   margin-top: 14px;
@@ -933,7 +906,6 @@ body {
 }
 
 .brand-name {
-  font-size: 50px;
   font-weight: 600;
   color: #54BD95;
   margin-bottom: 12px;
@@ -942,7 +914,6 @@ body {
 .brand-text {
   color: #A6A6A6;
   margin-bottom: 26px;
-  font-size: 18px;
   font-weight: 500;
 }
 
@@ -963,7 +934,7 @@ body {
   color: #ffffff;
   padding: 12px 26px;
   flex: 1;
-  font-size: 14px;
+  
 }
 
 .email-box input::placeholder {
@@ -977,7 +948,6 @@ body {
   border: none;
   background-color: #54BD95;
   color: #FFFFFF;
-  font-size: 20px;
   font-weight: 600;
   cursor: pointer;
 }
@@ -988,7 +958,6 @@ body {
 }
 
 .footer-col h4 {
-  font-size: 18px;
   margin-bottom: 18px;
   font-weight: 500;
 }
@@ -999,7 +968,6 @@ body {
 
 .footer-col li {
   color: #A6A6A6;
-  font-size: 18px;
   margin-bottom: 14px;
   cursor: pointer;
   font-weight: 500;
@@ -1012,9 +980,174 @@ body {
   border-top: 1px solid #1f2937;
   display: flex;
   justify-content: space-between;
-  font-size: 18px;
   line-height: 30px;
   color: #a9b1c7;
   font-weight: 500;
 }
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 20px;
+    height: 64px;
+  }
 
+  .nav-links {
+    display: none; 
+  }
+
+  .auth {
+    gap: 12px;
+  }
+
+  .signup {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+
+   .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-left h1 {
+    line-height: 1.15;
+  }
+
+  .description {
+    margin: 24px auto 0;
+    max-width: 100%;
+  }
+
+  .hero-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .trial-btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 16px;
+  }
+
+  .hero-right {
+    max-width: 100%;
+    transform: scale(0.9);
+  }
+
+  .float,
+  .credit-card,
+  .hero-icon {
+    /* display: none; */
+  }
+
+  .brands h2 {
+    font-size: clamp(1.6rem, 5vw, 2.2rem);
+  }
+
+  .logos {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+   .support {
+    padding: 60px 20px;
+  }
+
+  .support-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .ratings {
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .feature {
+    padding: 18px;
+  }
+  .features {
+    padding: 60px 20px;
+  }
+
+  .features-header {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    text-align: center;
+  }
+
+  .features-cards {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .feature-card p {
+    max-width: 100%;
+  }
+  .benefit {
+    padding: 70px 20px;
+  }
+
+  .benefit__wrapper {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  .pricing {
+    padding: 80px 20px;
+  }
+
+  .pricing-cards {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .card,
+  .card-pro {
+    width: 100%;
+    max-width: 360px;
+    min-height: auto;
+    transform: none;
+  }
+
+  .amount1,
+  .amount2 {
+    font-size: clamp(2.5rem, 8vw, 3.5rem);
+  }
+
+  .card button {
+    width: 100%;
+  }
+
+   .footer-section,
+  .site-footer {
+    padding: 60px 20px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .email-box {
+    width: 100%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
+@media (max-width:992px){
+  .nav-links{
+    display: none;
+  }
+}
