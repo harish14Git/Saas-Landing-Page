@@ -9,10 +9,12 @@ html {
   font-size: 100%;
 }
 
+
 body {
   overflow-x: hidden;
-  background-image: radial-gradient(circle 500% , #b5e4dc,#ffffff);
+  background-image: radial-gradient(circle at 0 0, #daefeb, #f2f5f2);
 }
+
 h1 {
   font-size: clamp(2.2rem, 6vw, 5rem);
 }
@@ -42,6 +44,13 @@ svg {
   max-width: 100%;
   height: auto;
 }
+/* header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #fff;
+}
 
 /* Navbar */
 .navbar {
@@ -50,8 +59,8 @@ svg {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-radius: 10%;
-  
+  position:relative;
+  background-image: radial-gradient(circle at 0 0, #daefeb, #daefeb);
 }
 
 .nav-links {
@@ -89,6 +98,7 @@ svg {
   color: #F8F8FA;
   border-radius: 10px;
   font-weight: 500;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09);
 }
 
 /* Hero */
@@ -103,7 +113,7 @@ svg {
   padding: 80px 60px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;  
   
 }
 
@@ -138,12 +148,13 @@ svg {
   color: #fff;
   border: none;
   border-radius: 40px;
-
   font-weight: 500;
   cursor: pointer;
   gap: 10px;
   padding: 20px 30px;
+  box-shadow:  0 10px 25px rgba(0, 0, 0, 0.09);
 }
+
 
 .demo-btn {
   display: flex;
@@ -242,7 +253,7 @@ svg {
 /* Credit Card */
 .credit-card {
   position: absolute;
-  right: -110px;
+  right: -80px;
   bottom: 20px;
   padding: 18px;
   border-radius: 10px;
@@ -339,7 +350,6 @@ svg {
   display: flex;
   gap: 18px;
   align-items: flex-start;
-
 }
 
 .icon {
@@ -406,7 +416,6 @@ svg {
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
-
 .feature-card h4 {
   margin-top: 24px;
   font-weight: 600;
@@ -472,7 +481,6 @@ svg {
   border-radius: 50%;
   display: grid;
   place-items: center;
-
 }
 
 /* RIGHT */
@@ -482,20 +490,21 @@ svg {
 
 /* image */
 .benefit-image {
-  width: 100%;
+  width: 80%;
   border-radius: 20px;
   display: block;
+  margin:0 auto;
 }
 
 /* outside image*/
 .benefit-icon {
   position: absolute;
-  left: -60px;
+  left: -5px;
+  z-index: 10;
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* common card */
 .benefit-card {
   position: absolute;
   background: #fff;
@@ -536,7 +545,7 @@ svg {
 /* income card */
 .benefit-card.income {
   top: 45%;
-  right: -25px;
+  right: -16px;
 }
 
 .benefit-card.income span {
@@ -558,7 +567,7 @@ svg {
 
 /* success card */
 .benefit-card.success {
-  bottom: 20px;
+  bottom: 0px;
   left: 20px;
   display: flex;
   align-items: center;
@@ -619,7 +628,7 @@ svg {
   display: flex;
   gap: 32px;
   justify-content: center;
-
+  border-radius: 2em;
 }
 
 .card {
@@ -627,15 +636,17 @@ svg {
   border-radius: 24px;
   padding: 40px 32px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  display: flex;
   flex-direction: column;
 }
 
 .card,
 .card-pro {
   min-height: 640px;
+  min-width: 200px;
 }
-
+.card:hover{
+  transform: scale(1.1);  
+}
 .card h3 {
   font-weight: 600;
   text-align: center;
@@ -713,11 +724,9 @@ svg {
   overflow: hidden;
 }
 
-/* Pro description */
 .card-pro .pro-desc {
   color: rgba(255, 255, 255, 0.9);
 }
-
 
 .card-pro .price {
   position: relative;
@@ -731,7 +740,7 @@ svg {
 .card-pro .price::before {
   content: "";
   position: absolute;
-  width: 140%;
+  width: 180%;
   height: 260px;
   background: rgba(255, 255, 255, 0.18);
   border-radius: 50%;
@@ -747,7 +756,6 @@ svg {
   font-weight: 700;
   line-height: 1;
   font-size: 4.5rem;
-
 }
 
 .amount2 sup {
@@ -755,7 +763,6 @@ svg {
   font-size: 1.5rem;
 }
 
-/* Save badge */
 .save-badge {
   position: relative;
   z-index: 1;
@@ -792,14 +799,12 @@ svg {
 }
 
 /* Footer */
-/* SECTION WRAPPER  */
 .footer-section {
-  background-color: #0e1522;
+  background-color: #161C28;
   padding: 80px 20px;
   color: #ffffff;
 }
 
-/* CONTAINER  */
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -812,13 +817,11 @@ svg {
 .footer-left {
   flex: 1;
 }
-
 .footer-left h2 {
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 16px;
 }
-
 .footer-subtitle {
   max-width: 420px;
   color: #A6A6A6;
@@ -826,13 +829,6 @@ svg {
   line-height: 1.6;
   margin-bottom: 40px;
 }
-
-.quote-mark {
-  width: 45px;
-  height: 38px;
-
-}
-
 .footer-testimonial {
   max-width: 500px;
   color: #A6A6A6;
@@ -840,49 +836,39 @@ svg {
   margin-bottom: 16px;
   margin-top: 30px;
   font-weight: 500;
-
 }
-
 .footer-author {
-
   font-weight: 500;
   color: #A6A6A6;
   margin-bottom: 30px;
 }
-
 .footer-avatars {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 32px;
-
 }
-
+/* right */
 .footer-card {
   flex: 1;
   max-width: 420px;
-  background-color: #1b2335;
+  background-color: #222938;
   padding: 40px;
   border-radius: 16px;
 }
-
 .card-header {
   text-align: center;
   margin-bottom: 30px;
 }
-
-
 .card-header h3 {
   font-weight: 500;
 }
-
 .footer-card label {
   display: block;
   font-weight: 500;
   color: #FFFFFF;
   margin-bottom: 18px;
 }
-
 .footer-card input,
 .footer-card textarea {
   width: 100%;
@@ -891,12 +877,10 @@ svg {
   border: none;
   margin-bottom: 20px;
 }
-
 .footer-card textarea {
   resize: none;
   height: 100px;
 }
-
 .footer-card button {
   width: 100%;
   padding: 14px;
@@ -907,31 +891,24 @@ svg {
   font-weight: 600;
   cursor: pointer;
 }
-
 .card-alt {
   text-align: center;
   font-weight: 500;
   color: #9aa3b8;
   margin-top: 14px;
 }
-
 .site-footer {
-  background: linear-gradient(180deg, #0e1522 0%, #0b111c 100%);
+  background-color: #161C28;
   color: #ffffff;
   padding: 80px 20px 30px;
+  gap: 30px;
 }
-
-
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
-  gap: 80px;
-  justify-content: space-between;
-}
-
-.footer-brand {
-  max-width: 320px;
+  gap: 40px;
+  justify-content:space-around;
 }
 
 .brand-name {
@@ -939,14 +916,11 @@ svg {
   color: #54BD95;
   margin-bottom: 12px;
 }
-
 .brand-text {
   color: #A6A6A6;
   margin-bottom: 26px;
   font-weight: 500;
 }
-
-
 .email-box {
   display: flex;
   align-items: center;
@@ -955,7 +929,6 @@ svg {
   padding: 6px;
   width: 400px;
 }
-
 .email-box input {
   background: transparent;
   border: none;
@@ -963,13 +936,10 @@ svg {
   color: #ffffff;
   padding: 12px 26px;
   flex: 1;
-
 }
-
 .email-box input::placeholder {
   color: #9aa3b8;
 }
-
 .email-box button {
   width: 44px;
   height: 44px;
@@ -980,31 +950,28 @@ svg {
   font-weight: 600;
   cursor: pointer;
 }
-
 .footer-links {
   display: flex;
-  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 }
-
 .footer-col h4 {
   margin-bottom: 18px;
   font-weight: 500;
 }
-
 .footer-col ul {
   list-style: none;
 }
-
 .footer-col li {
   color: #A6A6A6;
   margin-bottom: 14px;
   cursor: pointer;
   font-weight: 500;
 }
-
 .footer-bottom {
   max-width: 1200px;
-  margin: 60px auto 0;
+  margin: 60px auto ;
   padding-top: 30px;
   border-top: 1px solid #1f2937;
   display: flex;
@@ -1012,6 +979,16 @@ svg {
   line-height: 30px;
   color: #a9b1c7;
   font-weight: 500;
+  background: #161C28;
+}
+
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -1064,12 +1041,6 @@ svg {
   .hero-right {
     max-width: 100%;
     transform: scale(0.9);
-  }
-
-  .float,
-  .credit-card,
-  .hero-icon {
-    /* display: none; */
   }
 
   .brands h2 {
@@ -1169,20 +1140,61 @@ svg {
   }
 
   .footer-links {
-    flex-direction: column;
-    gap: 40px;
+    flex-wrap: wrap;
   }
-
-  .footer-bottom {
+ .footer-bottom{
     flex-direction: column;
-    gap: 16px;
-    text-align: center;
+    gap:15px;
   }
+ 
 }
 
 @media (max-width:992px) {
+  .navbar {
+    padding: 0 20px;
+  }
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+  }
   .nav-links {
-    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #e4f1ec;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    text-align: center;
+    display: flex;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  }
+  .nav-links.open {
+    display: flex;
+     max-height: 400px;
+     opacity: 1;
+    transform: translateY(0);
+  }
+  .footer-container{
+    flex-direction: column;
+  }
+  .footer-links{
+    display: flex;
+    gap: 40px;
+  }
+  }
+@media(max-width:389px){
+  .auth{
+    display:none;
   }
 }
 
